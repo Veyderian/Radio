@@ -1,6 +1,5 @@
 public class Radio {
 
-    int getCurrentVolume;
     private int currentRadioStation;
     private int currentVolume;
 
@@ -57,7 +56,7 @@ public class Radio {
         currentVolume = 0;
     }
 
-    public void setToMaxVolume() {
+    public void setToMaxVolume(int i) {
         currentVolume = 100;
     }
 
@@ -75,12 +74,6 @@ public class Radio {
         int target = currentVolume - 1;
         setCurrentVolume(target);
     }
-
-
-    // public void increaseRadioStationOn1() {
-    //  int target = currentRadioStation + 1;
-    // setCurrentRadioStation(target);
-    //  }
 
 }
 
